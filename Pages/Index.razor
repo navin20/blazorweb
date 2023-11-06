@@ -1,0 +1,260 @@
+﻿@page "/"
+@* @layout MainLayout; *@
+@layout EmptyLayout;
+@using blazorweb.Data;
+@* @using blazorweb.Data; *@
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject  ProtectedLocalStorage ProtectedLocalStore
+@using Microsoft.JSInterop
+@* @inject IComponentContext ComponentContext *@
+
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@* @import url('open-iconic/font/css/open-iconic-bootstrap.min.css'); *@
+@* @inherits LayoutComponentBase *@
+
+
+<PageTitle>HomePage</PageTitle>
+
+<style>
+   
+
+
+ body{
+  
+    width:100%;
+        height : 100%;
+    background: url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg" );
+    background-repeat: no-repeat;
+    @* background-attachment: fixed; *@
+    background-size: cover;
+
+        @* background-color: black;
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9Alvq6D5oAj29_LT9UBGvLEU4knFyMrwc6lW19uTOV4hABjbhhu0Y9_LD97Z-Ah6Vv0&usqp=CAU");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:100% 100%; *@
+    }
+@* @@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap"); *@
+
+
+@* html {
+	background: #000000;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 6rem;
+	font-family: "Montserrat", sans-serif;
+	width: 100%;
+} *@
+@* .container {
+	padding-bottom: 3rem;
+}
+img {
+	-webkit-box-reflect: below 5px
+		linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.container img:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.last {
+	margin-top: 6.5rem;
+}
+.featured_wrapper {
+	position: relative;
+}
+.featured_wrapper img {
+	width: 100%;
+	width: 100%;
+	height: 100vh;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: top;
+	object-position: top;
+}
+.title_wrapper {
+	position: absolute;
+	width: 100%;
+	left: 2rem;
+	bottom: 2rem;
+	padding: 20px 40px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.title_wrapper h1 {
+	width: 70%;
+}
+button {
+	background: #f40612 !important;
+	color: #fff !important;
+	font-size: 18px;
+	padding: 0.5rem 3rem;
+	outline: none;
+	border: 0 !important;
+}
+@@ (max-width: 768px) {
+	.title_wrapper {
+		text-align: center;
+		left: 0;
+	}
+	
+	.title_wrapper h1 {
+		font-size: 32px !important;
+		width: 100%;
+	}
+	.container {
+		padding: 20px;
+	}
+}
+@@media (max-width: 480px) {
+	.column.is-one-quarter img {
+		width: 100%;
+		margin-bottom: 7rem;
+	}
+    * {
+  box-sizing: border-box;
+}
+
+@* body {
+  
+} 
+/* Responsive columns - one column layout (vertical) on small screens */
+@* @@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+} *@
+@* .footer{
+    position: fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+} *@
+
+</style>
+
+<body>
+	
+@code{
+	   private HttpContext? httpss;
+	
+	   public string?  name  {get;set;}
+	   public  bool isConnected;
+
+
+
+	   public void BookTickets(){
+
+	   }
+
+
+
+  
+ 
+
+
+		  protected override async Task OnAfterRenderAsync(bool firstRender){
+			@* await base.OnAfterRenderAsync(firstRender); *@
+			@* if(firstRender){ *@
+
+				@* Console.WriteLine("comes here session"); *@
+					isConnected = true;
+		
+					 var result= await ProtectedLocalStore.GetAsync<string>("token");
+						name = result.Success? result.Value : null;
+						Console.WriteLine(name);
+						@* name = await sessionStorage.GetItemAsync<string>("token"); *@
+							
+							
+						@* var result  = await localStorage.GetItemAsync<string>("token");
+						@* name = result.Success? result.Value : null; *@
+						@* localStorage.Changed += (sender, e) =>
+            {
+                Console.WriteLine($"Value for key {e.Key} changed from {e.OldValue} to {e.NewValue}");
+            }; *@ 
+						await ProtectedLocalStore.SetAsync("token",name);
+						await InvokeAsync( () =>StateHasChanged());
+						
+
+						
+
+						
+
+				@* Console.WriteLine(name.GetType()); *@
+
+				
+		
+			
+
+		 } 
+		 }
+		 
+
+		 
+
+
+
+	@if(name!=null){
+
+
+	<UserNavMenu/>
+
+	}else{
+
+		<NavMenu/>
+
+
+			
+
+
+	}
+
+
+
+   
+ 
+
+  
+    
+    
+
+</body>
+
+
+@* <div class ="footer"> *@
+@* 
+<body>
+
+    
+
+</body> *@
+    
+
+@* </div> *@
+
+@* <div class = "container">
+<div class="top">
+	 <div class="columns">
+		<div class="column is-full featured_wrapper p-0">
+            <img src = "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg" />
+			
+			 <div class="title_wrapper">
+				<span class="has-text-white">Trending Today</span>
+				<h1 class="title is-1 has-text-white">The Untold Story of the great Lorem Ipsum</h1>
+				<button class="button is-medium">Watch It Now</button>
+			</div>
+		</div>
+	</div>
+</div> 
+</div> *@
+
+
+		 

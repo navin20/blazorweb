@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/df68b5a4-10c4-43f2-aeb4-c58d36c063a0/resourceGroups/cinema-app_group/providers/Microsoft.Web/sites/cinema-app",
+    "appService.deploySubpath": "bin\\Publish"
+}
