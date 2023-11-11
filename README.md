@@ -35,6 +35,15 @@ The database used currently is firebase realtime database to keep data of the us
 <img src = "current details.PNG">
 
 
+## the current User Interface of the website is basic .
+## However in the next few days it will be updated to a advance version of the website.
+
+## More Feature will be Updated by Around Next Week
+
+
+the data to store user data during session is the local storage for now
+
+
 
 
 
