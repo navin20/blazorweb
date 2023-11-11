@@ -50,20 +50,26 @@ The database used currently is firebase realtime database to keep data of the us
 ### BLAZOR :
 #### for the web frame work , for the front end part, it is a framework created from .net core 
 
-<img src = "https://firebase.google.com/images/social.png"
+
 
 ### FIREBASE :
 #### for storing the user data, movie data in the database and for user authentication services
 
-<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png"
+<img src = "https://firebase.google.com/images/social.png">
+
+
 
 ### .NET CORE 7 :
 #### for maintaining and handling the server side and backend side of the app and for doing the most coding and creating features for the app
 
-<img src = "https://assets.intersystems.com/dims4/default/2ef84bc/2147483647/strip/false/crop/473x266+154+0/resize/1200x675!/quality/90/?url=http%3A%2F%2Finter-systems-brightspot.s3.amazonaws.com%2Fe4%2Fe5%2Fc7728ffb4f60964a6e7d089905f0%2Fazure-logo-large.jpg">
+<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png">
+
+
 
 ### Azure :
 #### work as a cloud for hosting web application and provide a run time for the app in the production environment
+
+<img src = "https://assets.intersystems.com/dims4/default/2ef84bc/2147483647/strip/false/crop/473x266+154+0/resize/1200x675!/quality/90/?url=http%3A%2F%2Finter-systems-brightspot.s3.amazonaws.com%2Fe4%2Fe5%2Fc7728ffb4f60964a6e7d089905f0%2Fazure-logo-large.jpg">
 
 
 
