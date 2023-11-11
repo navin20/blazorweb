@@ -44,13 +44,15 @@ The database used currently is firebase realtime database to keep data of the us
 ## the data to store user data during session is the local storage for now
 
 ## the tools used to developing and maintaining this website are :
+
+### BLAZOR :
+#### for the web frame work , for the front end part, it is a framework created from .net core 
+
+
 <div class = "container-fluid text-center">
 <img src = "https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png">
 
 </div>
-
-### BLAZOR :
-#### for the web frame work , for the front end part, it is a framework created from .net core 
 
 
 
