@@ -1,4 +1,4 @@
-# Cinema Website
+![image](https://github.com/navin20/blazorweb/assets/45535518/c130725c-dfe3-4821-a02c-30e9fdd10f1b)# Cinema Website
 
 ## this website is a website fo customers to book tickets online and can choose seats according to their convenience.
 
@@ -36,12 +36,34 @@ The database used currently is firebase realtime database to keep data of the us
 
 
 ## the current User Interface of the website is basic .
-## However in the next few days it will be updated to a advance version of the website.
+## However in the next few days it will be updated to a advance version of the website
 
 ## More Feature will be Updated by Around Next Week
 
 
-the data to store user data during session is the local storage for now
+## the data to store user data during session is the local storage for now
+
+## the tools used to developing and maintaining this website are :
+
+<img src = "https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png">
+
+### BLAZOR :
+#### for the web frame work , for the front end part, it is a framework created from .net core 
+
+<img src = "https://firebase.google.com/images/social.png"
+
+### FIREBASE :
+#### for storing the user data, movie data in the database and for user authentication services
+
+<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png"
+
+### .NET CORE 7 :
+#### for maintaining and handling the server side and backend side of the app and for doing the most coding and creating features for the app
+
+<img src = "https://assets.intersystems.com/dims4/default/2ef84bc/2147483647/strip/false/crop/473x266+154+0/resize/1200x675!/quality/90/?url=http%3A%2F%2Finter-systems-brightspot.s3.amazonaws.com%2Fe4%2Fe5%2Fc7728ffb4f60964a6e7d089905f0%2Fazure-logo-large.jpg">
+
+### Azure :
+#### work as a cloud for hosting web application and provide a run time for the app in the production environment
 
 
 
