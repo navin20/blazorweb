@@ -21,5 +21,22 @@ The database used currently is firebase realtime database to keep data of the us
 ### Website page 
 <img src= "Capture.PNG">
 
+### Register page
+<img src = "val.PNG">
+
+### Login page
+<img src = "val1.PNG">
+
+### movie that is coming next week
+<img src = "moviesample.PNG">
+
+### User View after login *pretty much similar to the one before log in, for now*
+
+<img src = "current details.PNG">
+
+
+
+
+
 
 
