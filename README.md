@@ -1,4 +1,4 @@
-![image](https://github.com/navin20/blazorweb/assets/45535518/c130725c-dfe3-4821-a02c-30e9fdd10f1b)# Cinema Website
+# Cinema Website
 
 ## this website is a website fo customers to book tickets online and can choose seats according to their convenience.
 
