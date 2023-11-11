@@ -15,3 +15,10 @@ the website is made with blazor server with .net c# as the backend handling the 
 
 The database used currently is firebase realtime database to keep data of the user profile and movie information whereas the user is authorize using firebase authentication 
 
+
+## Sample Website Ui for now :
+
+<img scr= "">
+
+
+
