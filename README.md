@@ -6,7 +6,7 @@ the website is hosted on azure cloud platform
 
 https://cinema-app.azurewebsites.net/
 
-// currently the server of the website is closed
+// server opens sometimes
 
 
 The website have just been developed and has only few features like register/buy tickets and login
