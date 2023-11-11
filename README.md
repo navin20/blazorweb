@@ -15,6 +15,10 @@ the website is made with blazor server with .net c# as the backend handling the 
 
 The database used currently is firebase realtime database to keep data of the user profile and movie information whereas the user is authorize using firebase authentication 
 
+## the current User Interface of the website is basic .
+
+## However in the next few days it will be updated to a advance version of the website, the advance version is almost finished and is still under some testing , so it is not hosted on azure yet
+
 
 ## Sample Website Ui for now :
 
@@ -35,8 +39,7 @@ The database used currently is firebase realtime database to keep data of the us
 <img src = "current details.PNG">
 
 
-## the current User Interface of the website is basic .
-## However in the next few days it will be updated to a advance version of the website
+
 
 ## More Feature will be Updated by Around Next Week
 
