@@ -45,7 +45,7 @@ namespace blazorweb.Data
 
                   
               var auth = new FirebaseAuthProvider(
-                            new FirebaseConfig("AIzaSyB9x30W5fV10Weyjs0c6VdNqlCzmtBtFrg"));  
+                            new FirebaseConfig("--secret key--"));  
 
                             FirebaseAuthLink credentials = null;
 
@@ -57,7 +57,7 @@ namespace blazorweb.Data
             public static async Task<Firebase.Auth.FirebaseAuthLink?> LoginData(string email,string password){
             
               var auth = new FirebaseAuthProvider(
-                            new FirebaseConfig("AIzaSyB9x30W5fV10Weyjs0c6VdNqlCzmtBtFrg"));   
+                            new FirebaseConfig("--secret key--"));   
 
                          
 
@@ -105,7 +105,7 @@ namespace blazorweb.Data
         
         public static  async Task <bool> RegisterforAuthentication(string email, string password){
           var auth = new FirebaseAuthProvider(
-                            new FirebaseConfig("AIzaSyB9x30W5fV10Weyjs0c6VdNqlCzmtBtFrg"));    
+                            new FirebaseConfig("--secret key--"));    
                             Console.WriteLine("here");
 
 
@@ -128,7 +128,7 @@ namespace blazorweb.Data
 
         }
         public static  async  Task<bool>  RegisterUserData(Registering? data ){
-                var Firebase = new FirebaseClient("https://cinema-b752f-default-rtdb.asia-southeast1.firebasedatabase.app/");
+                var Firebase = new FirebaseClient("--Client Url--");
 
 
             try{
